@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pok&#233;mart</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:700i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+	<div class="row">
+		<div class="wrapper topbar">
+			<div class="col-3 logo">
+				<img src="images/logo.png">
+			</div>
+			<div class="col-9 searchbardiv">
+				<div class="searchbarwrap">
+					<div class="searchbar-text">
+						<form>
+							<input type="searchbar" placeholder="SEARCH">
+						</form>
+					</div>
+					<div class="searchbar-button">
+						<button><i class="fa fa-search" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 logindiv">
+				<div class="login-child">
+					<a href="#">LOG&nbsp;IN</a>
+				</div>
+				<div class="skinny-line">
+				</div>
+				<div class="login-child dropdown">
+					<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" id="cart"></i></a>
+					<div class="col-4 cart-dropdown-content">
+						<div class="cartwrapper">
+							<div class="cart-item">
+								<div class="cart-item-img">
+									<img src="images/product_greatball.png">
+								</div>
+
+								<div class="cart-item-deets">
+									QTY:&nbsp;2&nbsp;Great&nbsp;Ball
+									<br>
+									<img class="cartpriceimg" src="images/currency.png"><font class="cartprice">600</font>
+								</div>
+
+							</div>
+							<div class="hr-div">
+								<hr>
+							</div>
+							<div class="cart-item">
+								<div class="cart-item-img">
+									<img src="images/product_backpack.png">
+								</div>
+								<div class="cart-item-deets">
+									QTY:&nbsp;1&nbsp;Backpack
+									<br>
+									<img class="cartpriceimg" src="images/currency.png"><font class="cartprice">1200</font>
+								</div>
+							</div>
+							<div class="buttons">
+								<button>VIEW&nbsp;CART</button>
+								<button>CHECK&nbsp;OUT</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="row navbar">
+		<div class="wrapper">
+			<div class="col-15 navbar-text" align="center">
+				<a href="#">CAPTURING</a> &#9679; <a href="#">ADVENTURE</a> &#9679; <a href="#">HEALTH</a> &#9679; <a href="#">TRAINING</a>
+			</div>
+		</div>
+	</div>
+	<div class="row banner-row">
+		<div class="wrapper">
+			<div class="col-15 banner-interior">
+				<div class="banner-text" align="center">
+					<h1 class="h1">the very best</h1>
+					<h2 class="h2">POK&#201;MON</h2>
+					<h3 class="h3">GOODS AND SERVICES</h3>
+					<p></p>
+					<p><button>SHOP</button></p>
+				</div>
+			</div>				
+		</div>			
+	</div>
+
+	<div class="row">
+		<div class="wrapper menu-wrap">
+			<div class="potion menu-item">
+				<div class="potion-text">
+					<font class="italics">health</font>
+					<br>
+					<font class="h5">Potion</font>
+					<br>
+					3.5 stars
+					<p>
+					<br>
+					<button class="normalbutton">ADD TO CART</button>
+					</p>
+				</div>
+			</div>
+
+			<div class="pokeball menu-item">
+				<div class="col-4 pokeball-text">
+					<font class="italics">capturing</font>
+					<br>
+					<font class="h5">Pok&#233;ball</font>
+					<br>
+					4.6&nbsp;stars
+					<p>
+					<br>
+					<button class="normalbutton">ADD TO CART</button>
+					</p>
+				</div>
+			</div>			
+		</div>
+	</div>	
+	<div class="row">
+		<div class="wrapper menu-wrap">
+			<div class="bike menu-item">
+				<div class="bike-text">
+					<font class="italics">adventure</font>
+					<br>
+					<font class="h5">Bicycle</font>
+					<br>
+					5.0 stars
+					<p>
+					<br>
+					<button class="normalbutton">ADD TO CART</button>
+					</p>	
+				</div>
+			</div>
+			<div class="thunderstone menu-item">
+				<div class="thunderstone-text">
+					<font class="italics">training</font>
+					<br>
+					<font class="h5">Thunderstone</font>
+					<br>
+					4.7 stars
+					<p>
+					<br>
+					<button class="normalbutton">ADD TO CART</button>
+					</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="wrapper">
+			<div class="col-15 testimonials" align="center">
+				<img src="images/testimonial_one.jpg" class="mySlides" align="center">
+				<img src="images/testimonial_two.jpg" class="mySlides" align="center">
+				<img src="images/testimonial_three.jpg" class="mySlides" align="center">
+			</div>
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+				    var i;
+				    var x = document.getElementsByClassName("mySlides");
+				    for (i = 0; i < x.length; i++) {
+				       x[i].style.display = "none";  
+				    }
+				    myIndex++;
+				    if (myIndex > x.length) {myIndex = 1}    
+				    x[myIndex-1].style.display = "block";  
+				    setTimeout(carousel, 3000);
+				}
+			</script>
+		</div>	
+	</div>
+
+	<div class="row">
+		<div class="col-15 scroll-menu">
+			<div>
+				<a href="#">
+					<i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="scroll-menu-item">
+				<img src="images/product_backpack.png" class="scroll-menu-img">
+				<div>
+					<font class="italics">adventure</font>
+					<br>
+					<font class="h6">Backpack</font>
+					<br>
+					<img src="images/currency.png"><font class="price"> 1200</font>
+					<br>
+				</div>
+				<button>ADD TO CART</button>
+			</div>
+			<div class="scroll-menu-item">
+				<img src="images/product_greatball.png" class="scroll-menu-img">
+				<div>
+					<font class="italics">capturing</font>
+					<br>
+					<font class="h6">Greatball</font>
+					<br>
+					<img src="images/currency.png"><font class="price"> 600</font>
+					<br>
+				</div>
+				<button>ADD TO CART</button>
+			</div>
+			<div class="scroll-menu-item">
+				<img src="images/product_potion.png" class="scroll-menu-img">
+				<div class="scroll-item-text">
+					<font class="italics">health</font>
+					<br>
+					<font class="h6">Potion</font>
+					<br>
+					<img src="images/currency.png"><font class="price"> 300</font>
+					<br>
+				</div>
+				<button>ADD TO CART</button>
+			</div>
+			<div>
+				<a href="#">
+					<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="row search-local-row">
+		<div class="wrapper">
+			<div class="col-15 pokecenter-parent-div">
+				<div class="pokecenter-child-div">
+					<img src="images/pokecenter.jpg">
+				</div>
+				<div class="pokecenter-child-div pokecenter-text">
+					<font class="h4">POK&#201;MON CENTER</font>
+						<p>Heal, store, and trade your pok&#233;mon in our brand new pokemon centers.</p>
+						<p>See if a Pok&#233;mon Center is attached to your Pok&#233;mart today!</p>
+						<br>
+						<div class="pokecenter-search-div">
+							<input type="searchbar" placeholder="CITY & REGION"><button>SEARCH</button>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row newsletter-row">
+		<div class="wrapper">
+			<div class="col-15 newsletter">
+				<div class="col-15 newsletter-text" align="center">
+					SIGN UP FOR OUR NEWSLETTER
+					<div class="newsletter-signup-wrap">
+						<input type="text" placeholder="Enter your email address" class="newsletter-signup-textbox"><button class="newsletter-search-button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+						SIGN UP</button>
+					</div>
+				</div>
+				
+			</div>			
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="wrapper">
+			<div class="col-15">
+				<div class="col-4">
+					<img src="images/logo.png">
+				</div>
+				<div class="col-11 footer">
+					<div class="row">
+						<div class="footer-item">
+							<a href="#">TERMS & CONDITIONS</a>
+						</div>
+						<div class="footer-item">
+							<a href="#">PRIVACY POLICY</a>
+						</div>
+						<div class="footer-item">
+							<a href="#">DELIVERY</a>
+						</div>
+						<div class="footer-item">
+							<a href="#">FAQ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
